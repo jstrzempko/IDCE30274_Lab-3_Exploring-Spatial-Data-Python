@@ -1,14 +1,13 @@
-# LAB 3: EXPLORING SPATIAL DATA USING PYTHON
-Due: 6 November 2020
+# Lab 3: Exploring Spatial Data Using Python
+Due: 6th November 2020
 
-The data for this lab can be found in the Lab 3 folder on the Course OneDrive. 
+This repo was created to submit files for Lab 3 for IDCE 30274 Computer Programming for GIS taught by Professor Shadrock Roberts at Clark University. All scripts were created to learn functions within the arcpy library. It contains:
+* `Lab3_shape_exists.py`: test for the presence of a shapefile in the workspace using function `.Exists()`
+* `Lab3_describing_data`: describe the properties of a shapefile using function `.Describe()` (`.dataType`, `.datasetType`, `.catalogPath`, `.baseName`, `.file`, `.isVersioned`, `.shapeType`, `.spatialReference.name`, `.spatialReference.type`, `.spatialReference.domain`)
+  + This script contains single lines of code run in the ArcPy window within ArcMap with comments that show the output of each line. These cannot be replicated outside of the ArcMap environment. This script solely serves as documentation of the many functions used. 
+* `Lab3_list.py`:  output list of elements (files) from a specific file path and use a for loop to iterate over elements to carry out a repetitive task using functions `.ListFeatureClasses()` and `.Describe()`
+* `Lab3_listcopy.py`: use a for loop to iterate over elements of a list to copy files into a geodatabase using function `.CopyFeatures_management()`
+* `Lab3_listfields.py`: list the names and data types of the fields in the attribute table of the cities shapefile using function `.ListFields()`
 
-##  WHAT TO SUBMIT
-You will submit a file to your Github repo via Moodle. You will need to create your own `.py` files for the repo. *Be sure they all contain good comment headers!* Your repo should contain:
-- `Lab3_shape_exists.py` - Use in-line comments to explain what each line of code is doing.
-- `Lab3_describing_data` – these are single lines of code that you ran in the ArcPy window with comments that show the output of each line. 
-- `Lab3_list.py` – In the comment header, be sure to explain what the code is doing. Then use a block comment below the code to show your output. 
-- `Lab3_listcopy.py` - Add a description of what this script does to the comment header of your code. You should describe this in terms of outputs and inputs.
-- `Lab3_listfields.py` - In the comment header, be sure to explain what the code is doing. Then use a block comment below the code to show your output. 
-
-There is no README required for this lab. However, a good README with documentation will help you re-use these scripts in the future and demonstrate your technical and documentation skills to potential employers. 
+# The Code
+The script is meant to be run using shapefiles provided for this class with file paths and names specific to the student submission. If questions arise, users can contact Jess Strzempko at JeStrzempko@clarku.edu for more help and further information.
